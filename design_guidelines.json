@@ -1,0 +1,157 @@
+{
+  "identity": {
+    "name": "Panaderia Moderna",
+    "tone": "Warm, Artisanal, Inviting, Trustworthy",
+    "persona": "E1_BAKERY_V1",
+    "description": "A modern Filipino bakery platform that feels like a warm hug. It blends traditional hospitality with modern convenience."
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Playfair Display, serif",
+      "body": "DM Sans, sans-serif",
+      "accent": "Caveat, cursive"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-tight",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "body_lg": "text-lg md:text-xl leading-relaxed",
+      "body_base": "text-base leading-relaxed text-stone-600",
+      "caption": "text-sm text-stone-500 uppercase tracking-widest"
+    },
+    "installation": {
+      "google_fonts_url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:opsz,wght@9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#4A3B32", 
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#E6D5B8",
+      "secondary_foreground": "#4A3B32",
+      "accent": "#D97757",
+      "accent_foreground": "#FFFFFF",
+      "background": "#FDFBF7",
+      "surface": "#FFFFFF",
+      "muted": "#F5F0E6",
+      "muted_foreground": "#78716C",
+      "border": "#E7E5E4",
+      "success": "#658147",
+      "warning": "#D97757",
+      "error": "#EF4444"
+    },
+    "gradients": {
+      "hero_overlay": "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(74,59,50,0.4) 100%)",
+      "card_hover": "linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0))"
+    },
+    "tailwind_config_extension": {
+      "colors": {
+        "bakery": {
+          "cream": "#FDFBF7",
+          "cocoa": "#4A3B32",
+          "latte": "#E6D5B8",
+          "terracotta": "#D97757",
+          "matcha": "#658147",
+          "flour": "#F5F0E6"
+        }
+      }
+    }
+  },
+  "layout_strategies": {
+    "spacing": {
+      "container_padding": "p-6 md:p-12 lg:p-20",
+      "section_gap": "gap-12 md:gap-24",
+      "element_gap": "gap-4 md:gap-6"
+    },
+    "grids": {
+      "hero_tetris": "grid grid-cols-1 md:grid-cols-12 gap-4 h-auto md:h-[80vh]",
+      "product_bento": "grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[400px]",
+      "dense_dashboard": "grid grid-cols-1 md:grid-cols-4 gap-4"
+    },
+    "containers": {
+      "main": "max-w-7xl mx-auto w-full",
+      "narrow": "max-w-3xl mx-auto w-full"
+    }
+  },
+  "component_styles": {
+    "buttons": {
+      "primary": "bg-bakery-cocoa text-white rounded-full px-8 py-4 font-medium hover:bg-bakery-cocoa/90 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-bakery-cocoa/20",
+      "secondary": "bg-bakery-flour text-bakery-cocoa rounded-full px-8 py-4 font-medium hover:bg-bakery-latte/50 transition-all border border-bakery-cocoa/10",
+      "ghost": "text-bakery-cocoa hover:bg-bakery-flour/50 rounded-full px-6 py-3 transition-colors",
+      "icon": "p-3 rounded-full hover:bg-bakery-flour transition-colors text-bakery-cocoa"
+    },
+    "cards": {
+      "product": "bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-bakery-cocoa/5 transition-all duration-300 border border-stone-100 group cursor-pointer",
+      "feature": "bg-bakery-flour/30 rounded-3xl p-8 border border-bakery-cocoa/5 hover:border-bakery-cocoa/10 transition-colors"
+    },
+    "inputs": {
+      "default": "rounded-xl border-bakery-latte/50 bg-white px-4 py-3 focus:ring-2 focus:ring-bakery-cocoa/20 focus:border-bakery-cocoa outline-none transition-all placeholder:text-stone-400"
+    },
+    "navigation": {
+      "header": "fixed top-4 left-4 right-4 md:left-8 md:right-8 bg-white/80 backdrop-blur-md rounded-full shadow-sm border border-white/20 z-50 px-6 py-4 flex items-center justify-between"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "soft": "0 8px 30px rgba(74,59,50,0.06)",
+      "floating": "0 20px 40px -10px rgba(74,59,50,0.1)"
+    },
+    "borders": {
+      "subtle": "1px solid rgba(74,59,50,0.08)",
+      "highlight": "1px solid rgba(217,119,87,0.3)"
+    },
+    "radius": {
+      "standard": "rounded-xl",
+      "organic": "rounded-2xl md:rounded-3xl"
+    },
+    "animations": {
+      "hover_lift": "hover:-translate-y-1 transition-transform duration-300 ease-out",
+      "image_zoom": "group-hover:scale-105 transition-transform duration-700 ease-in-out"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_main": "https://images.unsplash.com/photo-1771415662513-5f2ba29cf452?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxkZWxpY2lvdXMlMjBjYWtlJTIwY2xvc2UlMjB1cHxlbnwwfHx8fDE3NzIyNzEyMDJ8MA&ixlib=rb-4.1.0&q=85",
+      "hero_secondary_1": "https://images.unsplash.com/photo-1649773289148-0c546e53480c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxwYXN0cnklMjBjaGVmJTIwZGVjb3JhdGluZyUyMGNha2V8ZW58MHx8fHwxNzcyMjcxMjA0fDA&ixlib=rb-4.1.0&q=85",
+      "hero_secondary_2": "https://images.unsplash.com/photo-1761695939616-1c03087c1ce4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwxfHxiYWtlcnklMjBpbnRlcmlvciUyMHdhcm0lMjBpbnZpdGluZ3xlbnwwfHx8fDE3NzIyNzEyMDJ8MA&ixlib=rb-4.1.0&q=85",
+      "category_cakes": "https://images.unsplash.com/photo-1576618148423-df549bcb6972?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxkZWxpY2lvdXMlMjBjYWtlJTIwY2xvc2UlMjB1cHxlbnwwfHx8fDE3NzIyNzEyMDJ8MA&ixlib=rb-4.1.0&q=85",
+      "category_pastries": "https://images.unsplash.com/photo-1649331373423-6054b852e5f8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHw0fHxkZWxpY2lvdXMlMjBjYWtlJTIwY2xvc2UlMjB1cHxlbnwwfHx8fDE3NzIyNzEyMDJ8MA&ixlib=rb-4.1.0&q=85",
+      "family_dining": "https://images.unsplash.com/photo-1710186012216-9b2cf2a800bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwyfHxoYXBweSUyMGZpbGlwaW5vJTIwZmFtaWx5JTIwZWF0aW5nJTIwdG9nZXRoZXJ8ZW58MHx8fHwxNzcyMjcxMjAzfDA&ixlib=rb-4.1.0&q=85",
+      "chef_working": "https://images.pexels.com/photos/5964559/pexels-photo-5964559.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "payment_fallback": "Use text labels 'GCash' (Blue) and 'Maya' (Green) if SVGs are unavailable."
+    }
+  },
+  "features_guidelines": {
+    "date_picker": {
+      "style": "Use Shadcn Calendar but customize with rounded-2xl and brand colors. Don't use default radius.",
+      "logic": "Must allow blocking past dates. Highlight 'Today' with accent color."
+    },
+    "qr_display": {
+      "style": "Display QR code in a clean white card with 'Scan to Pay' instruction. Add a 'Download QR' button below it.",
+      "visibility": "Must be 100% width on mobile for easy scanning."
+    },
+    "guest_checkout": {
+      "flow": "Single page form. No multi-step wizards if possible. Keep it frictionless.",
+      "fields": "Name, Address (TextArea), Contact Number (Tel input), Delivery Date/Time."
+    }
+  },
+  "instructions_to_main_agent": {
+    "1": "Install fonts immediately in index.css using the Google Fonts URL provided.",
+    "2": "Configure tailwind.config.js to extend the color palette with the 'bakery' object defined in colors.",
+    "3": "Create a 'Layout' component that wraps the app with the specific creamy background color.",
+    "4": "Use the 'tetris' grid for the Landing Page Hero section to showcase the cake images.",
+    "5": "For the Admin Dashboard, switch to a denser grid but keep the warm typography to maintain brand consistency.",
+    "6": "Ensure all interactive elements have data-testid attributes.",
+    "7": "Do not use gradients for backgrounds. Use solid warm cream colors or subtle noise textures."
+  },
+  "UNIVERSAL_GUIDELINES": {
+    "transitions": "Use specific transitions (e.g., transition-colors, transition-transform) not transition-all.",
+    "alignment": "Avoid center-aligning text unless it's a short headline. Left-align body text for readability.",
+    "spacing": "Use comfortable spacing (p-6, p-8) inside cards. Don't cram content.",
+    "motion": "Add subtle entrance animations (fade-in-up) for product grids.",
+    "accessibility": "Ensure text contrast meets WCAG AA. The brown text on cream background is designed for this."
+  }
+}
