@@ -7,3 +7,4 @@ qrcode[pil]
 pillow
 requests
 bcrypt
+resend
