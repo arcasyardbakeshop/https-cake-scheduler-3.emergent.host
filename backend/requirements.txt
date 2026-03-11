@@ -1,9 +1,9 @@
 fastapi
 uvicorn
-pymongo
 motor
+pymongo
 python-dotenv
-dnspython
-qrcode
-pillow==9.5.0
+qrcode[pil]
+pillow
 requests
+bcrypt
