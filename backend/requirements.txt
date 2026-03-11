@@ -6,3 +6,4 @@ python-dotenv
 dnspython
 qrcode
 pillow==9.5.0
+requests
