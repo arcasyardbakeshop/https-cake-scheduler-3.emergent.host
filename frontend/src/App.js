@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Toaster } from "sonner";
 
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
@@ -21,8 +20,6 @@ function App() {
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
       </Routes>
-
-      <Toaster />
     </Router>
   );
 }
