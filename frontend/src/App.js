@@ -1,33 +1,9 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
-
-import Home from "./pages/Home";
-import ProductDetail from "./pages/ProductDetail";
-import Cart from "./pages/Cart";
-import Checkout from "./pages/Checkout";
-import OrderConfirmation from "./pages/OrderConfirmation";
-import AdminLogin from "./pages/AdminLogin";
-import AdminDashboard from "./pages/AdminDashboard";
-
-import { CartProvider } from "./context/CartContext";
-
 function App() {
   return (
-    <CartProvider>
-      <BrowserRouter>
-        <div className="App">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/product/:id" element={<ProductDetail />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/order-confirmation/:orderId" element={<OrderConfirmation />} />
-            <Route path="/admin" element={<AdminLogin />} />
-            <Route path="/admin/dashboard" element={<AdminDashboard />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </CartProvider>
+    <div style={{ padding: "40px", fontFamily: "Arial" }}>
+      <h1>Arca's Yard Cake Scheduler</h1>
+      <p>The React app is working.</p>
+    </div>
   );
 }
 
